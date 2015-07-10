@@ -1,0 +1,151 @@
+{
+    "A": "Hg", 
+    "gllbsc_ind-gap": 0.0, 
+    "B": "Ir", 
+    "anion": "ON2", 
+    "CB_ind": 6.441916802396203, 
+    "anion_idx": 2, 
+    "heat_of_formation_all": 1.58, 
+    "CB_dir": 6.441916802396203, 
+    "filename": "/Users/ajain/Documents/papers_proposals/2012Paper_UNCOptimization/data/rawdata/abon2/0a3e8864d791fee48bf76417052aa0a8545a27d6.json", 
+    "sum_magnetic_moments": -0.14298724958636075, 
+    "VB_dir": 6.441916802396203, 
+    "VB_ind": 6.441916802396203, 
+    "is_direct": true, 
+    "gllbsc_dir-gap": 0.0, 
+    "FermiLevel": 0.293575442251, 
+    "XCFunctional": "RPBE", 
+    "FermiWidth": 0.0018374654734, 
+    "structure": {
+        "lattice": {
+            "a": 3.9706926274504166, 
+            "c": 3.9706926274504166, 
+            "b": 3.9706926274504166, 
+            "matrix": [
+                [
+                    3.9706926274504166, 
+                    0.0, 
+                    0.0
+                ], 
+                [
+                    0.0, 
+                    3.9706926274504166, 
+                    0.0
+                ], 
+                [
+                    0.0, 
+                    0.0, 
+                    3.9706926274504166
+                ]
+            ], 
+            "volume": 62.603528009899556, 
+            "beta": 90.0, 
+            "alpha": 90.0, 
+            "gamma": 90.0
+        }, 
+        "sites": [
+            {
+                "label": "Hg", 
+                "xyz": [
+                    0.004930192840408674, 
+                    0.0, 
+                    0.0
+                ], 
+                "abc": [
+                    0.001241645552296087, 
+                    0.0, 
+                    0.0
+                ], 
+                "properties": {}, 
+                "species": [
+                    {
+                        "occu": 1, 
+                        "element": "Hg"
+                    }
+                ]
+            }, 
+            {
+                "label": "Ir", 
+                "xyz": [
+                    1.9892145324761648, 
+                    1.9853463137252083, 
+                    1.9853463137252083
+                ], 
+                "abc": [
+                    0.5009741924429543, 
+                    0.5, 
+                    0.5
+                ], 
+                "properties": {}, 
+                "species": [
+                    {
+                        "occu": 1, 
+                        "element": "Ir"
+                    }
+                ]
+            }, 
+            {
+                "label": "N", 
+                "xyz": [
+                    1.9902729371480103, 
+                    0.0, 
+                    1.9853463137252083
+                ], 
+                "abc": [
+                    0.5012407466114962, 
+                    0.0, 
+                    0.5
+                ], 
+                "properties": {}, 
+                "species": [
+                    {
+                        "occu": 1, 
+                        "element": "N"
+                    }
+                ]
+            }, 
+            {
+                "label": "N", 
+                "xyz": [
+                    1.9902729371480103, 
+                    1.9853463137252083, 
+                    0.0
+                ], 
+                "abc": [
+                    0.5012407466114962, 
+                    0.5, 
+                    0.0
+                ], 
+                "properties": {}, 
+                "species": [
+                    {
+                        "occu": 1, 
+                        "element": "N"
+                    }
+                ]
+            }, 
+            {
+                "label": "O", 
+                "xyz": [
+                    0.004730142372838177, 
+                    1.9853463137252083, 
+                    1.9853463137252083
+                ], 
+                "abc": [
+                    0.0011912637961794094, 
+                    0.5, 
+                    0.5
+                ], 
+                "properties": {}, 
+                "species": [
+                    {
+                        "occu": 1, 
+                        "element": "O"
+                    }
+                ]
+            }
+        ], 
+        "@class": "Structure", 
+        "@module": "pymatgen.core.structure"
+    }
+}
