@@ -1,6 +1,14 @@
 """
 Preliminary checks:
 (1) You have a folder ending in '_data' in the same folder as this file with all the water-splitting data
+(2) Edit your bash profile to support the moe and ga_optimization_ternary modules by writing:
+    # for GA
+    export PYTHONPATH="[insert pwd to ga_optimization_ternary directory]:$PYTHONPATH"
+
+    # for MOE
+    export PYTHONPATH="[insert pwd to MOE directory]:$PYTHONPATH"
+
+    (without the brackets)
 
 """
 
@@ -14,7 +22,6 @@ from moe.easy_interface.experiment import Experiment
 from moe.easy_interface.simple_endpoint import gp_next_points
 from moe.optimal_learning.python.data_containers import SamplePoint
 from ga_optimization_ternary.fitness_evaluators import eval_fitness_simple, eval_fitness_complex_product
-from index_to_compound_er import decode
 from tools import decode
 from pymatgen.core.periodic_table import Element, symbol_from_Z
 
