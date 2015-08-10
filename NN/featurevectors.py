@@ -52,7 +52,7 @@ def get_sd_X(material, elem_list):
 key = os.environ['MAPI_KEY']
 m = MPRester(key)	
 
-materials_list = m.query(criteria={"elasticity": {"$exists": True}}, properties=['pretty_formula', 'reduced_cell_formula', "elasticity.K_VRH", 'volume', 'density', 'formation_energy_per_atom', 'formation_energy_per_atom', 'nsites'])
+materials_list = m.query(criteria={"elasticity": {"$exists": True}}, properties=['pretty_formula', 'reduced_cell_formula', "elasticity.K_VRH", "elasticity.G_VRH", 'volume', 'density', 'formation_energy_per_atom', 'formation_energy_per_atom', 'nsites'])
 
 
 def vectorize_and_catalog(materials):
