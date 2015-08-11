@@ -53,10 +53,18 @@ while len(good_dict) < num_good:
 	if f_neighbor < f_current:
 		[current_coord, f_current, bulk_current] = [neigh_coord, f_neighbor, bulk_neighbor]		
 		del bank[current_idx]
-		current_idx = neigh_idx
+		
+		# check if deleting current coord will create void in indexing list  when jumping to neighbor, if neighbor index is smaller, void will be irrelevant
+		if neigh_idx > current_idx:
+			current_idx = neigh_idx - 1
+		else:
+			current_idx = neigh_idx
 	else: 
+		# as you idle at a current point and bad neighbors are being deleted, this adjusts the current coord index to keep up with changing size of data bank
+		if neigh_idx < current_idx:
+			current_idx = current_idx - 1
 		del bank[neigh_idx]
-
+		
 	if f_current <= good_tol:
 		pretty = vect_to_mat_dict[tsne_to_vect_dict[tuple(current_coord)]]['pretty_formula']
 		if not any(pretty in x for x in good_formula):
